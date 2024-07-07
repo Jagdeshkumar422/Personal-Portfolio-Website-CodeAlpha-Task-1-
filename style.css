@@ -195,11 +195,13 @@ span{
     gap: 2rem;
 }
 .services-container .servicesbox{
-    flex: 1 1 30rem;
+    /* flex: 1 1 30rem; */
     background: var(--second-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
+    width: 31%;
     text-align: center;
+    height: 270px;
     border: 0.2rem solid var(--bg-color);
     transition: 0.5s ease;
 }
@@ -383,6 +385,7 @@ span{
     section{
         padding: 10rem 3% 2rem;
     }
+    
     .services{
         padding-bottom: 7rem;
     }
@@ -394,6 +397,9 @@ span{
     }
     .footer{
         padding: 2rem 3%;
+    }
+    .servicesbox{
+        width: 48% !important;
     }
 }
 
@@ -450,6 +456,9 @@ span{
 }
 
 @media screen and (max-width: 617px){
+    .servicesbox{
+        width: 100% !important;
+    }
     .portfolio-container{
         grid-template-columns:  1fr;
     }
